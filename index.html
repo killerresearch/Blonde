@@ -230,6 +230,37 @@
     font-weight:700;font-size:14.5px;padding:11px 14px;border:2px solid var(--line);cursor:pointer;font-family:inherit;
   }
 
+  /* ---------- BUY / TOKEN SPECS ---------- */
+  .buy-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:18px;margin-top:26px;align-items:start}
+  @media (max-width:900px){.buy-grid{grid-template-columns:1fr}}
+  .buy-card{background:var(--amber);color:var(--amber-ink);border:2px solid var(--line);box-shadow:var(--shadow);padding:24px}
+  .buy-card h3{font-size:26px;font-weight:900;margin:0 0 8px;text-transform:uppercase;line-height:1.05}
+  .buy-card p{margin:0;color:#4a3803;font-size:15.5px}
+  .buy-card p b{color:var(--amber-ink)}
+  .buy-btn{
+    display:flex;align-items:center;justify-content:center;gap:8px;margin-top:18px;
+    background:var(--amber-ink);color:var(--amber);text-decoration:none;font-weight:900;font-size:18px;
+    padding:15px 20px;border:2px solid var(--amber-ink);min-height:44px;
+  }
+  .buy-note{font-family:"IBM Plex Mono",monospace;font-size:13px;margin-top:14px;color:#4a3803}
+  .spec-card{background:var(--panel);border:2px solid var(--line);box-shadow:var(--shadow)}
+  .spec-head{padding:11px 16px;border-bottom:2px solid var(--line);background:var(--panel-2);font-family:"IBM Plex Mono",monospace;font-size:13px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+  .spec-head .name{color:var(--name);font-weight:700}
+  .spec-grid{display:grid;grid-template-columns:repeat(3,1fr)}
+  @media (max-width:560px){.spec-grid{grid-template-columns:repeat(2,1fr)}}
+  .spec{padding:13px 15px;border-right:1.5px dashed var(--soft);border-bottom:1.5px dashed var(--soft)}
+  .spec .k{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2)}
+  .spec .v{font-weight:900;font-size:18px;margin-top:2px}
+  .spec .v.up{color:var(--green-deep)}
+  .spec .sub{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-2);margin-top:1px}
+  .grad{padding:14px 16px;border-bottom:1.5px dashed var(--soft)}
+  .grad-top{display:flex;justify-content:space-between;gap:10px;font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--ink-2)}
+  .grad-top b{color:var(--ink)}
+  .grad-bar{height:12px;border:2px solid var(--line);background:var(--panel-2);margin-top:8px}
+  .grad-fill{height:100%;width:3.4%;background:var(--amber)}
+  .spec-foot{padding:11px 16px;font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--ink-2)}
+  .spec-foot b{color:var(--ink)}
+
   /* ---------- LIGHTBOX ---------- */
   dialog{
     border:2px solid var(--line);background:var(--panel);color:var(--ink);padding:0;
@@ -267,6 +298,7 @@
       <a href="#origin">[ Origin ]</a>
       <a href="#gallery">[ Gallery ]</a>
       <a href="#pfps">[ PFPs ]</a>
+      <a href="#buy">[ Buy $BLONDE ]</a>
     </nav>
   </div>
 </div>
@@ -542,6 +574,43 @@
         </article>
       </div>
       <p class="gallery-note">&gt; all four are free to use as your profile picture. she would want it that way. &gt;mfw you pick Cool</p>
+    </div>
+  </section>
+
+  <!-- BUY $BLONDE -->
+  <section id="buy">
+    <div class="wrap">
+      <div class="sec-head"><span class="ref">&gt;&gt;25932006</span><h2>Buy $BLONDE</h2></div>
+      <p class="lead">She finally got a ticker. <strong>$BLONDE</strong> is live on <strong>OnePump by OneSwap</strong> on the <strong>Canton Network</strong> — same hair, same lashes, now on a bonding curve.</p>
+
+      <div class="buy-grid">
+        <div class="buy-card">
+          <h3>Get $BLONDE on OnePump</h3>
+          <p>Buy on the official OnePump launchpad page by OneSwap. <b>BLONDE stays in your OneSwap wallet until it graduates. Sell anytime.</b></p>
+          <a class="buy-btn" href="https://swap.oneswap.cc/launchpad/token/625fb9bb-2617-54d9-8165-ff1bcab996ae" target="_blank" rel="noopener">Buy $BLONDE on OneSwap ↗</a>
+          <p class="buy-note">&gt;she waited since 2016 for this<br />&gt;mfw you actually bought</p>
+        </div>
+
+        <div class="spec-card">
+          <div class="spec-head"><span><span class="name">Token Specs</span> · OnePump by OneSwap</span><span>Canton Network</span></div>
+          <div class="grad">
+            <div class="grad-top"><span>Graduation progress</span><span><b>3.4%</b> · 241.5K CC to graduation</span></div>
+            <div class="grad-bar" role="img" aria-label="Graduation progress: 3.4 percent"><div class="grad-fill"></div></div>
+          </div>
+          <div class="spec-grid">
+            <div class="spec"><div class="k">Market cap</div><div class="v">98.9K CC</div></div>
+            <div class="spec"><div class="k">24h change</div><div class="v up">+16.44%</div></div>
+            <div class="spec"><div class="k">Volume</div><div class="v">17.2K CC</div></div>
+            <div class="spec"><div class="k">Latest price</div><div class="v">~0.0000978054 CC</div></div>
+            <div class="spec"><div class="k">Trades</div><div class="v">11</div></div>
+            <div class="spec"><div class="k">Holders</div><div class="v">2</div></div>
+            <div class="spec"><div class="k">Launch stage</div><div class="v">New</div><div class="sub">Bonding curve</div></div>
+            <div class="spec"><div class="k">Mint controls</div><div class="v">Fixed</div></div>
+            <div class="spec"><div class="k">Top 10 holders</div><div class="v">9.4%</div></div>
+          </div>
+          <div class="spec-foot">Launched <b>51 minutes</b> before this snapshot · Figures from the OnePump token page, snapshot <b>18 Nov 2026, 22:27 WIB</b> — numbers move, check the live page before you buy.</div>
+        </div>
+      </div>
     </div>
   </section>
 </main>
